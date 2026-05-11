@@ -34,11 +34,12 @@ def gerar_curva_retencao(usage_df):
     
     # Salvar o gráfico na sua pasta visuals
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    visuals_dir = os.path.join(base_dir, 'visuals')
+    visuals_dir = os.path.join(base_dir, 'visuals', '2015')
     os.makedirs(visuals_dir, exist_ok=True)
+    os.makedirs(os.path.join(base_dir, 'visuals', 'conclusoes'), exist_ok=True)
     
     plt.savefig(os.path.join(visuals_dir, 'curva_retencao_mfp.png'))
-    print("Gráfico de retenção salvo em visuals/curva_retencao_mfp.png")
+    print("Gráfico de retenção salvo em visuals/2015/curva_retencao_mfp.png")
     
     # Gerar o relatório de texto
     report_path = os.path.join(visuals_dir, 'relatorio_retencao.txt')

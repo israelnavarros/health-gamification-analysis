@@ -7,10 +7,11 @@ import re
 # 1. CONFIGURAÇÃO DE CAMINHOS
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REVIEW_PATH = os.path.join(BASE_DIR, 'data', 'app_reviews_data', 'mfp_reviews.csv')
-VISUALS_DIR = os.path.join(BASE_DIR, 'visuals')
+VISUALS_DIR = os.path.join(BASE_DIR, 'visuals', '2026')
 
 # Garante que a pasta visuals exista
 os.makedirs(VISUALS_DIR, exist_ok=True)
+os.makedirs(os.path.join(BASE_DIR, 'visuals', 'conclusoes'), exist_ok=True)
 
 # 2. LISTAS DE PALAVRAS (INGLÊS, PORTUGUÊS)
 GAMIFICATION_CONSERVATIVE = {
@@ -160,6 +161,41 @@ def main():
     chart_path = os.path.join(VISUALS_DIR, 'comparacao_gamificacao_reviews.png')
     plt.savefig(chart_path, bbox_inches='tight')
     print(f"\nGráfico salvo com sucesso em: {chart_path}")
+    plt.close()
+
+    # 6. GERANDO GRÁFICOS DE PALAVRAS POR TEMA (GAMIFICAÇÃO)
+    print("\nGerando gráficos de palavras para cada categoria da Gamificação...")
+    word_counts = {theme: {word: 0 for word in words} for theme, words in GAMIFICATION_BROAD.items()}
+    
+    for text in df['content_clean']:
+        if not text: continue
+        for theme, words in GAMIFICATION_BROAD.items():
+            for word in words:
+                if re.search(r'\b' + re.escape(word) + r'\b', text):
+                    word_counts[theme][word] += 1
+                    
+    for theme, words_dict in word_counts.items():
+        active_words = {k: v for k, v in words_dict.items() if v > 0}
+        if not active_words: continue
+            
+        sorted_words = sorted(active_words.items(), key=lambda x: x[1], reverse=True)
+        word_names = [w[0] for w in sorted_words]
+        word_vals = [w[1] for w in sorted_words]
+        
+        plt.figure(figsize=(8, 5))
+        sns.barplot(x=word_vals, y=word_names, palette="viridis")
+        
+        theme_title = theme.replace('_', ' ').title()
+        plt.title(f'Palavras mais frequentes no tema:\n{theme_title} (Positivas 2026)', fontsize=14, pad=15)
+        plt.xlabel('Número de Menções', fontsize=12)
+        plt.ylabel('Palavra-chave', fontsize=12)
+        
+        plt.tight_layout()
+        sub_chart_path = os.path.join(VISUALS_DIR, f'grafico_palavras_gamificacao_{theme}_2026.png')
+        plt.savefig(sub_chart_path)
+        plt.close()
+        
+    print("Gráficos de palavras de gamificação salvos com sucesso!")
 
 if __name__ == "__main__":
     main()

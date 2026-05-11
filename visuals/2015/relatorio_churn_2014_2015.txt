@@ -1,0 +1,60 @@
+=== ANÁLISE DE RECLAMAÇÕES (DADOS DE 2014 A 2015) ===
+Total de reviews negativas analisadas: 1031
+
+--- O QUE OS USUÁRIOS MAIS RECLAMAVAM? ---
+- PAYWALL_E_MONETIZACAO: 218 menções (21.1%)
+- PIORA_NA_INTERFACE_UX: 157 menções (15.2%)
+- BUGS_E_PERDA_DE_DADOS: 73 menções (7.1%)
+- FUNCIONALIDADES_REMOVIDAS_OU_PAGAS: 49 menções (4.8%)
+- METAS_E_PROGRESSO: 31 menções (3.0%)
+- STREAKS_E_CONSISTENCIA: 1 menções (0.1%)
+
+--- FREQUÊNCIA DE PALAVRAS ---
+(Número de reviews em que a palavra foi mencionada)
+- ads: 131
+- update: 112
+- ad: 46
+- premium: 38
+- sync: 34
+- pay: 31
+- slow: 26
+- used to be: 23
+- barcode: 14
+- lost: 14
+- deleted: 12
+- paid: 11
+- goals: 11
+- scan: 9
+- unusable: 9
+- weight loss: 9
+- money: 8
+- subscription: 7
+- scanner: 7
+- interface: 7
+- progress: 7
+- expensive: 5
+- ui: 5
+- bug: 5
+- removed: 4
+- layout: 4
+- laggy: 4
+- force close: 4
+- goal: 4
+- charge: 3
+- paywall: 2
+- greedy: 2
+- clunky: 2
+- crash: 2
+- freeze: 2
+- maintain: 2
+- scam: 1
+- popup: 1
+- popups: 1
+- bring back: 1
+- missing: 1
+- ux: 1
+- clicks: 1
+- design: 1
+- frozen: 1
+- log out: 1
+- streak: 1

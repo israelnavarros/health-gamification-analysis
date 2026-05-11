@@ -1,0 +1,75 @@
+=== ANÁLISE DE CHURN E RECLAMAÇÕES (MYFITNESSPAL) ===
+Total de reviews analisadas: 10000
+Total de reviews negativas (1 ou 2 estrelas): 5713
+
+--- O QUE OS USUÁRIOS MAIS RECLAMAM? ---
+- PIORA_NA_INTERFACE_UX: 2231 menções (39.1% das avaliações negativas)
+- PAYWALL_E_MONETIZACAO: 1786 menções (31.3% das avaliações negativas)
+- FUNCIONALIDADES_REMOVIDAS_OU_PAGAS: 948 menções (16.6% das avaliações negativas)
+- BUGS_E_PERDA_DE_DADOS: 491 menções (8.6% das avaliações negativas)
+- METAS_E_PROGRESSO: 351 menções (6.1% das avaliações negativas)
+- STREAKS_E_CONSISTENCIA: 42 menções (0.7% das avaliações negativas)
+
+--- FREQUÊNCIA DE PALAVRAS ---
+(Número de reviews em que a palavra foi mencionada)
+- update: 1474
+- premium: 757
+- ui: 459
+- pay: 455
+- subscription: 410
+- used to be: 402
+- barcode: 315
+- interface: 283
+- paid: 269
+- layout: 233
+- scan: 215
+- scanner: 178
+- money: 177
+- unusable: 169
+- ads: 168
+- goals: 165
+- sync: 160
+- paywall: 151
+- clicks: 126
+- lost: 118
+- deleted: 100
+- removed: 94
+- clunky: 92
+- design: 92
+- bug: 80
+- goal: 79
+- confusing: 78
+- progress: 76
+- expensive: 69
+- slow: 57
+- charge: 56
+- ux: 50
+- bring back: 40
+- missing: 40
+- greedy: 38
+- ad: 34
+- weight loss: 34
+- hard to use: 30
+- streak: 30
+- glitch: 19
+- laggy: 16
+- target: 14
+- duplicate: 13
+- scam: 12
+- log out: 11
+- crash: 9
+- maintain: 8
+- frozen: 6
+- projection: 6
+- popups: 5
+- popup: 4
+- bring it back: 4
+- freeze: 4
+- consecutive: 4
+- habit: 4
+- lag: 3
+- force close: 3
+- streaks: 3
+- days in a row: 2
+
+Insight: Palavras-chave como 'bring back' e 'barcode' indicam frustração com a monetização de mecânicas que antes eram gratuitas.

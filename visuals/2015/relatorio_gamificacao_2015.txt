@@ -1,0 +1,47 @@
+=== RELATÓRIO DE GAMIFICAÇÃO - REVIEWS POSITIVAS (2014-2015) ===
+Total de reviews positivas analisadas (4 ou 5 estrelas): 8489
+
+--- RESULTADOS GERAIS ---
+Menções na Lista Conservadora: 534 (6.29%)
+Menções na Lista Ampla: 3501 (41.24%)
+
+--- FREQUÊNCIA DE PALAVRAS ---
+(Número de reviews em que a palavra foi mencionada)
+- track: 1372
+- calories: 975
+- weight: 955
+- tracking: 376
+- daily: 249
+- diet: 245
+- goals: 229
+- nutrition: 227
+- weight loss: 199
+- macros: 147
+- goal: 115
+- friends: 84
+- progress: 67
+- habits: 62
+- steps: 49
+- workout: 48
+- support: 38
+- motivation: 33
+- community: 27
+- target: 23
+- routine: 18
+- chart: 16
+- graph: 8
+- challenge: 7
+- habit: 6
+- targets: 4
+- streak: 3
+- compete: 3
+- daily goal: 2
+- consistency: 2
+- achievement: 2
+- reward: 2
+- dieta: 2
+- consecutive: 1
+- badges: 1
+- rewards: 1
+- peso: 1
+- calorias: 1

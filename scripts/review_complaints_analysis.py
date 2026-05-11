@@ -7,8 +7,9 @@ import re
 # Configuração de caminhos
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REVIEW_PATH = os.path.join(BASE_DIR, 'data', 'app_reviews_data', 'mfp_reviews.csv')
-VISUALS_DIR = os.path.join(BASE_DIR, 'visuals')
+VISUALS_DIR = os.path.join(BASE_DIR, 'visuals', '2026')
 os.makedirs(VISUALS_DIR, exist_ok=True)
+os.makedirs(os.path.join(BASE_DIR, 'visuals', 'conclusoes'), exist_ok=True)
 
 
 # PPalavras-chave
@@ -89,6 +90,19 @@ def main():
             pct = (count / total_negatives) * 100 if total_negatives > 0 else 0
             f.write(f"- {theme.upper()}: {count} menções ({pct:.1f}% das avaliações negativas)\n")
             
+        f.write("\n--- FREQUÊNCIA DE PALAVRAS ---\n")
+        f.write("(Número de reviews em que a palavra foi mencionada)\n")
+        word_freq = {}
+        for group, words in THEMES.items():
+            for word in words:
+                pattern = r'\b' + re.escape(word) + r'\b'
+                count = df_negative['content_clean'].str.contains(pattern, regex=True).sum()
+                if count > 0:
+                    word_freq[word] = count
+        word_freq = dict(sorted(word_freq.items(), key=lambda item: item[1], reverse=True))
+        for w, c in word_freq.items():
+            f.write(f"- {w}: {c}\n")
+
         f.write("\nInsight: Palavras-chave como 'bring back' e 'barcode' indicam frustração com a monetização de mecânicas que antes eram gratuitas.\n")
 
     print(f"\nRelatório TXT salvo com sucesso em: {report_path}")
