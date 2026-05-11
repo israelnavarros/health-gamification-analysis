@@ -1,0 +1,42 @@
+=== RELATÓRIO DE GAMIFICAÇÃO - REVIEWS POSITIVAS (MYFITNESSPAL) ===
+Total de reviews positivas analisadas (4 ou 5 estrelas): 3157
+
+--- RESULTADOS GERAIS ---
+Menções na Lista Conservadora: 223 (7.06%)
+Menções na Lista Ampla: 1307 (41.40%)
+
+--- FREQUÊNCIA DE PALAVRAS ---
+(Número de reviews em que a palavra foi mencionada)
+- track: 455
+- calories: 403
+- tracking: 303
+- weight: 275
+- macros: 138
+- goals: 129
+- nutrition: 103
+- daily: 98
+- diet: 86
+- weight loss: 82
+- goal: 45
+- progress: 45
+- steps: 42
+- support: 26
+- habits: 24
+- workout: 18
+- friends: 15
+- routine: 9
+- chart: 8
+- habit: 6
+- community: 5
+- targets: 3
+- streak: 3
+- target: 2
+- days in a row: 2
+- consecutive: 2
+- motivation: 2
+- graph: 2
+- objetivos: 1
+- streaks: 1
+- consistency: 1
+- peso: 1
+- calorias: 1

@@ -1,0 +1,13 @@
+=== ANÁLISE DE CHURN E RECLAMAÇÕES (MYFITNESSPAL) ===
+Total de reviews analisadas: 10000
+Total de reviews negativas (1 ou 2 estrelas): 5713
+
+--- O QUE OS USUÁRIOS MAIS RECLAMAM? ---
+- PIORA_NA_INTERFACE_UX: 2231 menções (39.1% das avaliações negativas)
+- PAYWALL_E_MONETIZACAO: 1786 menções (31.3% das avaliações negativas)
+- FUNCIONALIDADES_REMOVIDAS_OU_PAGAS: 948 menções (16.6% das avaliações negativas)
+- BUGS_E_PERDA_DE_DADOS: 491 menções (8.6% das avaliações negativas)
+- METAS_E_PROGRESSO: 351 menções (6.1% das avaliações negativas)
+- STREAKS_E_CONSISTENCIA: 42 menções (0.7% das avaliações negativas)
+
+Insight: Palavras-chave como 'bring back' e 'barcode' indicam frustração com a monetização de mecânicas que antes eram gratuitas.
